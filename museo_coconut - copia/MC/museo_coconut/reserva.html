@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link rel="stylesheet" href="css/style3.css">
+    <script src="js/reserva.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+<body onload="onLoad()">
+    <header class="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="imagenes/tinified (1)/logo2.png" alt="logo" class="header__logo-image">
+            </a>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="galeria.html" class="header__nav-link">Galeria</a></li>
+                <li class="header__nav-item"><span class="header__nav-item-divisor">/</span></li>
+                <li class="header__nav-item"><a href="expo.html" class="header__nav-link">Exposiciones</a></li>
+                <li class="header__nav-item"><span class="header__nav-item-divisor">/</span></li>
+                <li class="header__nav-item"><a href="reserva.html" class="header__nav-link">Reserva</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="titulo">Reserva tu visita</h1>
+    <hr class="linea">
+    <section class="contenedor">
+        <div id="reservaCard">
+        
+        </div>
+        <div class="formulario">
+            <form id="form" class="formulario__contenedor">
+                <p>Nombre*<input type="text" id="name" label="Nombre" required/></p>
+                <p>Apellidos*<input type="text" id="surname" name="Apellidos" required/></p>
+                <p>Email*<input type="email" id="email" name="Email" required/></p>
+                <p>Teléfono<input type="tel" id="tel" name="Teléfono"/></p>
+                <p>Fecha*<input type="date" id="date" name="Fecha" required/></p>
+                <p><input type="submit"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__nav-container">
+                <li class="footer__nav-container-about">
+                    <a href="">Sobre nosotros</a>    
+                </li>
+                <li class="footer__nav-container-logo">
+                    <img src="imagenes/tinified (1)/logo2.png" alt="">    
+                </li>
+                <li class="footer__nav-container-contact">
+                    <a href="" >Contacto</a>    
+                </li>
+            </ul>
+
+        </nav>
+
+
+    </footer>
+</body>
+</html>

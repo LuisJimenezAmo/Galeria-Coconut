@@ -1,0 +1,328 @@
+/* esta para expo, reserva y galeria */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    }
+    
+    li {
+    list-style: none;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    }
+    
+    a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    }
+    
+    p a {
+    display: inline;
+    }
+    
+    img, picture, video, iframe {
+    display: block;
+    width: 100%;
+    /* height: initial; */
+    }
+    
+    form, input, label, select, option, textarea, button {
+    font-size: inherit;
+    font-family: inherit;
+    display: block;
+    background-color: transparent;
+    }
+    
+    :root {
+    font-size: 100%;
+    }
+    
+    html {
+    scroll-behavior: smooth;
+    }
+    
+
+    /* General styles */
+body {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #333;
+}
+
+/* Header styles */
+.header {
+    background-color: #FFB86F;
+    color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+}
+
+
+.header__logo-image {
+    width: 15rem;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header__nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+}
+.nav__list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+    margin: 0;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.header__nav-item .header__nav-item-divisor:hover{
+    cursor: default;
+}
+/* Main styles */
+.main {
+    padding: 20px;
+}
+.titulo{
+    margin: 1rem 1rem 3rem;
+    font-size: 3rem;
+}
+.contenedor{
+    display: flex;
+    width: 100%;
+    
+}
+.reservaCard{display: none;}
+.formulario{
+    width: 40%;
+    justify-content: center;
+    align-items: baseline;
+
+}
+.preparacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+
+}
+.preparacion__img {
+    max-width: 40%;
+    margin-bottom: 1rem;
+}
+.preparacion__titulo{
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+/* Footer styles */
+.footer {
+    background-color: #FFB86F;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    bottom: 0;
+    font-family: 'JetBrains Mono', monospace;
+    color: #e9eaec;
+    font-weight: bolder;
+}
+
+
+.footer__nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.footer__nav-container-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer__nav-container-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+.footer__nav-container-contact {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+/* EXPO */
+.exposiciones {
+    width: 100%;
+}
+.exposiciones__encabezado{
+display: flex;
+flex-direction: column;
+margin: 1rem .5rem 3rem 2rem;
+gap: 2rem;
+}
+.exposiciones__encabezado-titulo {
+    font-size: 10rem;
+    font-family: "Akshar", sans-serif;
+    color: #e9eaec;
+}
+.exposiciones__encabezado-filtro {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: end;
+    margin-right: 2rem;
+    margin-top: -3.5rem;
+    font-family: 'JetBrains Mono';
+    color: #e9eaec;
+}
+.linea {
+    height: 1px;
+    background: #FFB86F;
+    margin-right: 40%;
+    margin-left: 2rem;
+    
+}
+
+.exposiciones__linea2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+.exposiciones__linea2-grande {
+   width: 60%;
+   margin: 2rem
+}
+.exposiciones__linea2-peque {
+    width: 40%;
+    margin: 2rem;
+    
+}
+.exposiciones__linea3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+.exposiciones__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 1.5rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    font-family: 'JetBrains Mono';
+    color: #e9eaec;
+    font-weight: bolder;
+}
+.expoactiva__slider-item2 { 
+    font-family: 'JetBrains Mono';
+    color: #e9eaec;
+}
+
+/* GALERIA */
+.galeria {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'JetBrains Mono';
+    color: #e9eaec;
+    font-weight: bolder;
+    font-size: 13rem;
+
+}
+
+/* RESERVA */
+.titulo{
+    font-family: "Akshar", sans-serif;
+    color: #e9eaec;
+    font-size: 6rem;
+    margin-left: 2rem;
+}
+.formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'JetBrains Mono';
+    color: #e9eaec;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-weight: bolder;
+    font-size: 3rem;
+    border: .5rem;
+    border-color: #FFB86F;
+
+}
+.formulario input{
+    padding: 10px;
+    border: 2px solid #FFB86F;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+.formulario input{
+    font-family: 'JetBrains Mono';
+    color: #e9eaec;
+}
+.formulario__contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.titleCard {
+    font-family: 'JetBrains Mono';
+    color: #e9eaec; 
+    display: flex;
+    flex-direction: row;
+    margin-left: 4rem;
+    margin-top: 5rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
